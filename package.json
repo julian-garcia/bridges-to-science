@@ -1,0 +1,26 @@
+{
+  "name": "bridges-to-science",
+  "version": "1.0.0",
+  "description": "Bridges To Science",
+  "private": "true",
+  "source": [
+    "src/style/main.scss"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "wp-env": "wp-env start",
+    "start": "rm -rf dist && parcel watch",
+    "build": "rm -rf dist && npm run format && parcel build",
+    "format": "prettier --write ."
+  },
+  "author": "julian.garcia.leoni@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "@wordpress/env": "^4.9.0",
+    "parcel": "^2.6.2",
+    "postcss": "^8.4.14",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.4"
+  }
+}
