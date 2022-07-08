@@ -10,7 +10,7 @@
   "scripts": {
     "wp-env": "wp-env start",
     "start": "rm -rf dist && parcel watch",
-    "build": "rm -rf dist && npm run format && parcel build",
+    "build": "rm -rf .parcel-cache && rm -rf dist && npm run format && parcel build",
     "format": "prettier --write ."
   },
   "author": "julian.garcia.leoni@gmail.com",

@@ -1,0 +1,15 @@
+footer {
+  .social {
+    a {
+      @apply inline-block mx-3;
+    }
+  }
+
+  .footer-menu {
+    @apply font-title;
+  }
+
+  .copyright {
+    @apply font-title font-light;
+  }
+}

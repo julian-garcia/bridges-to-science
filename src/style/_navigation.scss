@@ -1,0 +1,9 @@
+.wp-site-blocks {
+  .nav-menu {
+    @apply text-xl font-title text-accent-spartan-gray gap-6 font-medium;
+
+    .button {
+      @apply p-0 sm:p-3 font-normal sm:font-medium;
+    }
+  }
+}

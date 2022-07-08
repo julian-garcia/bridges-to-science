@@ -1,0 +1,12 @@
+.wp-site-blocks {
+  @apply px-4;
+
+  .navigation,
+  .page-content {
+    @apply max-w-limit mx-auto;
+  }
+
+  .page-content > :where(:not(.alignleft):not(.alignright)) {
+    @apply max-w-none;
+  }
+}

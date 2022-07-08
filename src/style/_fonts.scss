@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Italic.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Bold.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url(../fonts/Montserrat-BoldItalic.woff);
+}
+@font-face {
+  font-family: Spartan;
+  font-display: swap;
+  src: url(../fonts/Spartan-Regular.woff);
+}
+@font-face {
+  font-family: Spartan;
+  font-display: swap;
+  font-weight: 300;
+  src: url(../fonts/Spartan-ExtraLight.woff);
+}
+@font-face {
+  font-family: Spartan;
+  font-display: swap;
+  font-weight: bold;
+  src: url(../fonts/Spartan-Bold.woff);
+}
+@font-face {
+  font-family: Spartan;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../fonts/Spartan-Medium.woff);
+}
+
+body {
+  @apply font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-title;
+}
