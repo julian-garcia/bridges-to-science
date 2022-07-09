@@ -6,3 +6,9 @@ function theme_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'theme_scripts');
+
+function add_meta_tags() {
+  echo '<meta name="description" content="' . get_option('blogdescription') . '" />';
+}
+
+add_action( 'wp_head', 'add_meta_tags');
