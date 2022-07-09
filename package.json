@@ -4,9 +4,10 @@
   "description": "Bridges To Science",
   "private": "true",
   "source": [
-    "src/style/main.scss"
+    "src/style/main.scss",
+    "src/js/language.js"
   ],
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": "> 0.5%, last 2 versions",
   "scripts": {
     "wp-env": "wp-env start",
     "start": "rm -rf dist && parcel watch",
@@ -16,7 +17,6 @@
   "author": "julian.garcia.leoni@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.2",
     "@wordpress/env": "^4.9.0",
     "parcel": "^2.6.2",
     "postcss": "^8.4.14",

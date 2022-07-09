@@ -5,24 +5,29 @@
     "color": {
       "palette": [
         {
-          "slug": "background",
-          "color": "#1d2327",
-          "name": "Background"
-        },
-        {
-          "slug": "foreground",
-          "color": "#f0f0f1",
-          "name": "Foreground"
-        },
-        {
           "slug": "primary",
-          "color": "#5093d4",
+          "color": "#55BBD4",
           "name": "Primary"
         },
         {
-          "slug": "secondary",
-          "color": "#153956",
-          "name": "Secondary"
+          "slug": "accent1",
+          "color": "#8AD260",
+          "name": "Accent 1"
+        },
+        {
+          "slug": "accent2",
+          "color": "#FAE052",
+          "name": "Accent 2"
+        },
+        {
+          "slug": "accent3",
+          "color": "#AB6728",
+          "name": "Accent 3"
+        },
+        {
+          "slug": "accent4",
+          "color": "#EF9C4C",
+          "name": "Accent 4"
         }
       ],
       "gradients": [

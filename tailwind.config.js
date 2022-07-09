@@ -24,12 +24,16 @@ module.exports = {
         "accent-spartan-gray": "#666666",
       },
       fontFamily: {
-        title: ["Spartan", "sans-serif"],
+        main: ["Spartan", "sans-serif"],
       },
       maxWidth: {
         limit: "1200px",
       },
+      flexBasis: {
+        fit: "fit-content",
+      },
     },
   },
   plugins: [],
+  safelist: ["!basis-fit"],
 };

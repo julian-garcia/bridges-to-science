@@ -8,7 +8,11 @@
     max-width: 570px;
     letter-spacing: 1px;
 
-    @apply text-5xl text-title font-title font-bold;
+    @apply text-title font-medium;
+
+    &.site-title {
+      @apply text-5xl font-bold;
+    }
 
     + hr {
       max-width: 470px;
@@ -17,7 +21,7 @@
   }
 
   p {
-    @apply text-lg;
+    @apply text-lg mb-4;
   }
 
   h2 {
@@ -42,7 +46,7 @@
 
   .wp-block-button__link,
   .button {
-    @apply bg-primary text-white font-title font-medium text-2xl p-3;
+    @apply bg-primary text-white font-medium text-2xl p-3;
 
     &.alt {
       @apply bg-accent-fresh-green;
@@ -55,5 +59,9 @@
     .top img {
       @apply h-52 w-auto;
     }
+  }
+
+  .spanish {
+    @apply hidden;
   }
 }
