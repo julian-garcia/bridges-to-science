@@ -1,3 +1,23 @@
+body {
+  @apply font-main;
+}
+
+.hero {
+  p {
+    @apply font-sans;
+  }
+  h3 {
+    @apply whitespace-nowrap;
+  }
+  .wp-block-image img {
+    max-width: 400px;
+    @apply mx-auto w-full;
+    @screen md {
+      max-width: 550px;
+    }
+  }
+}
+
 .wp-site-blocks {
   .wp-block-site-title {
     letter-spacing: 1px;
@@ -46,7 +66,7 @@
 
   .wp-block-button__link,
   .button {
-    @apply bg-primary text-white font-medium text-2xl p-3;
+    @apply bg-primary text-white font-medium text-2xl p-3 whitespace-nowrap;
 
     &.alt {
       @apply bg-accent-fresh-green;

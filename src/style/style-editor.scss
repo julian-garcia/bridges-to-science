@@ -1,0 +1,13 @@
+@import "_fonts";
+
+.editor-styles-wrapper.editor-styles-wrapper {
+  p {
+    @apply mb-4;
+  }
+  hr {
+    @apply my-4;
+  }
+  body & {
+    @apply font-main;
+  }
+}

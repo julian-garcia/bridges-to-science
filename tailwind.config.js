@@ -8,6 +8,7 @@ module.exports = {
     },
     extend: {
       screens: {
+        "2xs": "380px",
         xs: "480px",
         sm: "600px",
         md: "782px",
@@ -22,6 +23,7 @@ module.exports = {
         "accent-fresh-green": "#8AD260",
         "accent-sun-yellow": "#FAE052",
         "accent-spartan-gray": "#666666",
+        "accent-bubblegum": "#DF65B2",
       },
       fontFamily: {
         main: ["Spartan", "sans-serif"],
@@ -35,5 +37,5 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: ["!basis-fit"],
+  safelist: ["!inline-flex"],
 };

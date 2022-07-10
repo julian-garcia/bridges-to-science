@@ -5,16 +5,22 @@
     .button {
       @apply p-0 sm:p-3 font-normal sm:font-medium;
     }
-  }
-  .languages {
-    @apply fixed right-1/2 top-2 z-10 translate-x-1/2;
 
-    img {
-      @apply cursor-pointer;
+    .current-menu-item {
+      @apply text-accent-bubblegum;
     }
+  }
 
-    figure {
-      @apply mx-2;
+  .language-submenu {
+    img {
+      @apply -mt-1;
+    }
+    img,
+    span {
+      @apply cursor-pointer inline-block;
+    }
+    .active-language {
+      @apply w-5;
     }
   }
 }

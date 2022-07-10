@@ -45,13 +45,3 @@
   font-weight: 500;
   src: url(../fonts/Spartan-Medium.woff);
 }
-
-body {
-  @apply font-main;
-}
-
-.hero {
-  p {
-    @apply font-sans;
-  }
-}

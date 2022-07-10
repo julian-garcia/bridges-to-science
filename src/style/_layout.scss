@@ -9,4 +9,8 @@
   .page-content > :where(:not(.alignleft):not(.alignright)) {
     @apply max-w-none;
   }
+
+  .stack-small {
+    @apply block 2xs:inline-flex;
+  }
 }
