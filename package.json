@@ -8,7 +8,7 @@
     "src/images/ES.png",
     "src/style/style-editor.scss",
     "src/style/main.scss",
-    "src/js/language.js"
+    "src/js/main.js"
   ],
   "browserslist": "> 0.5%, last 2 versions",
   "scripts": {
@@ -20,10 +20,12 @@
   "author": "julian.garcia.leoni@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
     "@wordpress/env": "^4.9.0",
     "parcel": "^2.6.2",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
+    "swiper": "^8.3.0",
     "tailwindcss": "^3.1.4"
   }
 }

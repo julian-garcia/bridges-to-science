@@ -44,6 +44,10 @@ body {
     @apply text-lg mb-4;
   }
 
+  .headline {
+    @apply text-5xl leading-snug font-medium;
+  }
+
   h2 {
     @apply text-3xl;
   }
@@ -60,16 +64,28 @@ body {
     @apply border-y-gray-300 mb-6;
   }
 
+  .hide-mobile {
+    @apply hidden md:block;
+  }
+
   .show-mobile {
     @apply block md:hidden;
   }
 
-  .wp-block-button__link,
+  .wp-block-button__link {
+    @apply bg-transparent p-3;
+  }
+
+  .wp-block-button,
   .button {
-    @apply bg-primary text-white font-medium text-2xl p-3 whitespace-nowrap;
+    @apply bg-primary text-white border-2 border-primary font-medium text-2xl p-0 whitespace-nowrap w-full sm:w-auto text-center;
 
     &.alt {
-      @apply bg-accent-fresh-green;
+      @apply bg-accent-fresh-green border-accent-fresh-green;
+    }
+
+    &.clear {
+      @apply bg-transparent border-white;
     }
   }
 

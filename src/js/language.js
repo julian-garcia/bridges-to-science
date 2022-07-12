@@ -2,9 +2,21 @@ const languageToggles = document.querySelectorAll(
   ".toggle-spanish *, .toggle-english *"
 );
 
+const originalDisplayValues = [];
+document.querySelectorAll(".english, .spanish").forEach((element) => {
+  const displayValue = window
+    .getComputedStyle(element, null)
+    .getPropertyValue("display");
+  if (displayValue !== "none") {
+    originalDisplayValues.push(displayValue);
+  }
+});
+
 if (sessionStorage.getItem("b2s-lang")) {
   const lang = JSON.parse(sessionStorage.getItem("b2s-lang"));
   toggleContent(lang.hideLanguage, lang.showLanguage);
+} else {
+  toggleContent("spanish", "english");
 }
 
 languageToggles.forEach((toggle) => {
@@ -33,8 +45,8 @@ function toggleContent(hideLanguage, showLanguage) {
   document.querySelectorAll(`.${hideLanguage}`).forEach((element) => {
     element.style.display = "none";
   });
-  document.querySelectorAll(`.${showLanguage}`).forEach((element) => {
-    element.style.display = "block";
+  document.querySelectorAll(`.${showLanguage}`).forEach((element, index) => {
+    element.style.display = originalDisplayValues[index];
   });
   const activeLanguage = showLanguage === "english" ? "EN" : "ES";
   document.querySelector(
