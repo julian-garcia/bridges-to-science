@@ -10,6 +10,11 @@
           "name": "Primary"
         },
         {
+          "slug": "primary-dark",
+          "color": "#427C90",
+          "name": "Primary Dark"
+        },
+        {
           "slug": "accent1",
           "color": "#8AD260",
           "name": "Accent 1"
@@ -28,6 +33,26 @@
           "slug": "accent4",
           "color": "#EF9C4C",
           "name": "Accent 4"
+        },
+        {
+          "slug": "accent5",
+          "color": "#BD0000",
+          "name": "Accent 5"
+        },
+        {
+          "slug": "accent6",
+          "color": "#346518",
+          "name": "Accent 6"
+        },
+        {
+          "slug": "accent7",
+          "color": "#EA3328",
+          "name": "Accent 7"
+        },
+        {
+          "slug": "accent8",
+          "color": "#EFD029",
+          "name": "Accent 8"
         }
       ],
       "gradients": [
@@ -39,7 +64,7 @@
       ]
     },
     "spacing": {
-      "units": []
+      "units": ["px", "%"]
     },
     "layout": {
       "contentSize": "700px",

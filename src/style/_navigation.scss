@@ -3,11 +3,23 @@
     @apply text-xl text-accent-spartan-gray gap-6 font-medium;
 
     .button {
-      @apply p-0 sm:p-3 font-normal sm:font-medium;
+      @apply py-1 sm:p-3 font-normal sm:font-medium;
+
+      &.alt {
+        @apply border-none;
+      }
+
+      &.alt .wp-block-navigation-item__label {
+        @apply bg-accent-fresh-green text-center p-4;
+      }
     }
 
     .current-menu-item {
       @apply text-accent-bubblegum;
+    }
+
+    .is-menu-open .wp-block-navigation__submenu-container {
+      @apply pt-0;
     }
   }
 

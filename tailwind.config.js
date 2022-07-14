@@ -19,11 +19,16 @@ module.exports = {
       },
       colors: {
         primary: "#55BBD4",
+        "primary-dark": "#427C90",
         title: "#427C90",
         "accent-fresh-green": "#8AD260",
         "accent-sun-yellow": "#FAE052",
+        "accent-amber": "#EFD029",
         "accent-spartan-gray": "#666666",
         "accent-bubblegum": "#DF65B2",
+        "accent-shade-red": "#BD0000",
+        "accent-mango": "#EF9C4C",
+        "accent-red": "#EA3328",
       },
       fontFamily: {
         main: ["Spartan", "sans-serif"],
