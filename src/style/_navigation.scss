@@ -14,7 +14,7 @@
       }
     }
 
-    .current-menu-item {
+    .current-menu-item:not(.button) {
       @apply text-accent-bubblegum;
     }
 

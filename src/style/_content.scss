@@ -30,6 +30,14 @@ body {
 
     @apply text-title font-medium;
 
+    &.primary {
+      @apply text-primary;
+    }
+
+    &.large {
+      @apply text-5xl;
+    }
+
     &.site-title {
       @apply text-5xl font-bold;
     }
@@ -75,6 +83,10 @@ body {
     @apply border-y-gray-300 mb-6;
   }
 
+  .shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   .hide-mobile {
     @apply hidden md:block;
   }
@@ -83,13 +95,25 @@ body {
     @apply block md:hidden;
   }
 
-  .wp-block-button__link {
-    @apply bg-transparent p-3;
+  .hide-to-large {
+    @apply hidden xl:block;
+  }
+
+  .show-to-large {
+    @apply block xl:hidden;
   }
 
   .wp-block-button,
   .button {
-    @apply bg-primary text-white border-2 border-primary font-medium text-2xl p-0 whitespace-normal w-full sm:w-auto text-center;
+    @apply text-white border-2 border-transparent font-medium text-2xl p-0 whitespace-normal w-full sm:w-auto text-center -ml-0.5;
+
+    .wp-block-button__link {
+      @apply bg-transparent p-3 w-full;
+    }
+
+    &.primary {
+      @apply bg-primary border-primary;
+    }
 
     &.alt {
       @apply bg-accent-fresh-green border-accent-fresh-green;

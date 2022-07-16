@@ -17,42 +17,52 @@
         {
           "slug": "accent1",
           "color": "#8AD260",
-          "name": "Accent 1"
+          "name": "Fresh green"
         },
         {
           "slug": "accent2",
           "color": "#FAE052",
-          "name": "Accent 2"
+          "name": "Sun yellow"
         },
         {
           "slug": "accent3",
           "color": "#AB6728",
-          "name": "Accent 3"
+          "name": "Orange"
         },
         {
           "slug": "accent4",
           "color": "#EF9C4C",
-          "name": "Accent 4"
+          "name": "Mango"
         },
         {
           "slug": "accent5",
           "color": "#BD0000",
-          "name": "Accent 5"
+          "name": "Dark red"
         },
         {
           "slug": "accent6",
           "color": "#346518",
-          "name": "Accent 6"
+          "name": "Green"
         },
         {
           "slug": "accent7",
           "color": "#EA3328",
-          "name": "Accent 7"
+          "name": "Red"
         },
         {
           "slug": "accent8",
           "color": "#EFD029",
-          "name": "Accent 8"
+          "name": "Amber"
+        },
+        {
+          "slug": "accent9",
+          "color": "#666666",
+          "name": "Slate gray"
+        },
+        {
+          "slug": "accent10",
+          "color": "#DF65B2",
+          "name": "Bubblegum"
         }
       ],
       "gradients": [

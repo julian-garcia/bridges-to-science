@@ -42,5 +42,11 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: ["!inline-flex", "hide-mobile", "show-mobile"],
+  safelist: [
+    "!inline-flex",
+    "hide-mobile",
+    "show-mobile",
+    "hide-to-large",
+    "show-to-large",
+  ],
 };

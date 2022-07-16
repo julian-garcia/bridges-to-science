@@ -13,4 +13,25 @@
   .stack-small {
     @apply block 2xs:inline-flex;
   }
+
+  .wp-block-columns {
+    &.small-gap {
+      @apply gap-2.5;
+    }
+    &.full-width {
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+
+      @apply w-screen relative left-1/2 right-1/2;
+    }
+
+    .wp-block-column.stretch {
+      @apply flex flex-col;
+
+      .wp-block-group {
+        @apply flex-grow;
+      }
+    }
+  }
 }

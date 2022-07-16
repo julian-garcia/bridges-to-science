@@ -6,7 +6,7 @@ footer {
   }
 
   .footer-menu {
-    @apply font-main;
+    @apply font-main max-w-limit;
   }
 
   .copyright {
