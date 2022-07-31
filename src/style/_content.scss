@@ -58,6 +58,10 @@ html {
 
   p {
     @apply text-lg mb-4;
+
+    &:not(.has-text-color) a {
+      @apply text-primary-dark;
+    }
   }
 
   .headline {
@@ -110,8 +114,37 @@ html {
     @apply block xl:hidden;
   }
 
-  .spanish {
+  .spanish,
+  .volunteer {
     @apply hidden;
+  }
+
+  .toggle-donate-volunteer {
+    @apply cursor-pointer;
+  }
+
+  .limit-width {
+    @apply max-w-xl m-auto;
+  }
+
+  .round-border {
+    @apply border-4 rounded-3xl border-solid p-2 pb-1 text-center;
+
+    &.color-1 {
+      @apply border-accent-fresh-green;
+    }
+
+    &.color-2 {
+      @apply border-accent-mango;
+    }
+
+    &.color-3 {
+      @apply border-primary;
+    }
+
+    &.color-4 {
+      @apply border-accent-spartan-gray;
+    }
   }
 
   .team-image img {
@@ -131,6 +164,28 @@ html {
       margin-top: -150px;
       max-width: 300px;
       @apply mb-4 mx-auto;
+    }
+  }
+
+  .wpforms-container.contact-form {
+    max-width: 600px;
+
+    .wpforms-field-label {
+      @apply text-xl font-medium;
+    }
+
+    .wpforms-field {
+      @apply mb-4;
+    }
+
+    button[type="submit"].submit {
+      min-width: 200px;
+      @apply mx-auto block text-xl font-medium bg-primary text-white;
+    }
+
+    textarea {
+      min-height: 120px;
+      max-height: 120px;
     }
   }
 }
