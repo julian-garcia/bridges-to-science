@@ -15,13 +15,15 @@
     "wp-env": "wp-env start",
     "start": "rm -rf dist && parcel watch",
     "build": "rm -rf .parcel-cache && rm -rf dist && npm run format && parcel build",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "theme-zip": "npm run build && node package-theme.js"
   },
   "author": "julian.garcia.leoni@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "@wordpress/env": "^4.9.0",
+    "archiver": "^5.3.1",
     "parcel": "^2.6.2",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
