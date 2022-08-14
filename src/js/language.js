@@ -3,10 +3,16 @@ const languageToggles = document.querySelectorAll(
 );
 
 const originalDisplayValues = [];
+const languageElements = { english: [], spanish: [] };
 document.querySelectorAll(".english, .spanish").forEach((element) => {
   const displayValue = window
     .getComputedStyle(element, null)
     .getPropertyValue("display");
+  if (element.classList.contains("english")) {
+    languageElements.english.push(element);
+  } else {
+    languageElements.spanish.push(element);
+  }
   if (displayValue !== "none") {
     originalDisplayValues.push(displayValue);
   }
@@ -42,12 +48,13 @@ languageToggles.forEach((toggle) => {
 });
 
 function toggleContent(hideLanguage, showLanguage) {
-  document.querySelectorAll(`.${hideLanguage}`).forEach((element) => {
-    element.style.display = "none";
-  });
-  document.querySelectorAll(`.${showLanguage}`).forEach((element, index) => {
+  languageElements[showLanguage].forEach((element, index) => {
     element.style.display = originalDisplayValues[index];
   });
+  languageElements[hideLanguage].forEach((element) => {
+    element.style.display = "none";
+  });
+
   const activeLanguage = showLanguage === "english" ? "EN" : "ES";
   document.querySelector(
     ".language-submenu > a"
