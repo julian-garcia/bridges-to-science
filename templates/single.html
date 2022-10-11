@@ -1,25 +1,79 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","align":"full","layout":{"inherit":true}} -->
-<main class="wp-block-group alignfull">
+<main class="wp-block-group alignfull article">
   <!-- wp:post-title {"fontSize":"large"} /-->
 
-  <!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
   <div class="wp-block-group">
-    <!-- wp:post-author {"showAvatar":false} /-->
-
     <!-- wp:post-date /-->
-
-    <!-- wp:post-terms {"term":"category"} /-->
-
-    <!-- wp:post-terms {"term":"post_tag"} /-->
+    <!-- wp:paragraph -->
+    <p>&bull;</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:post-excerpt /-->
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"20px"} -->
-  <div style="height: 20px" aria-hidden="true" class="wp-block-spacer"></div>
-  <!-- /wp:spacer -->
+  <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group social-share">
+    <!-- wp:paragraph -->
+    <p>
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="facebook"
+      ></a>
+    </p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p>
+      <a
+        href="https://twitter.com/intent/tweet?url="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="twitter"
+      ></a>
+    </p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p>
+      <a
+        href="https://www.linkedin.com/shareArticle?mini=true&url="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="linkedin"
+      ></a>
+    </p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p>
+      <a
+        href="https://api.whatsapp.com/send?text="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp"
+      ></a>
+    </p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p>
+      <a
+        href="mailto:?&subject=&body="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="email"
+      ></a>
+    </p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
 
+  <!-- wp:separator -->
+  <hr class="wp-block-separator" />
+  <!-- /wp:separator -->
+
+  <!-- wp:post-featured-image /-->
   <!-- wp:post-content {"align":"full","layout":{"inherit":true}} /-->
 
   <!-- wp:spacer {"height":"20px"} -->

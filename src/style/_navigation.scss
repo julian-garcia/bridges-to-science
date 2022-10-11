@@ -23,16 +23,40 @@
     }
   }
 
-  .language-submenu {
-    img {
-      @apply -mt-1;
+  .language-submenu.wp-block-navigation-submenu {
+    ul > li {
+      @apply pl-0;
     }
-    img,
+
     span {
       @apply cursor-pointer inline-block;
     }
+
     .active-language {
       @apply w-5;
+    }
+
+    .wp-block-navigation__submenu-icon.wp-block-navigation-submenu__toggle {
+      @apply mb-1.5;
+    }
+
+    .wp-block-navigation__submenu-container {
+      @apply min-w-0 py-2 ml-4;
+    }
+
+    .wp-block-navigation-item__content {
+      @apply py-1 pl-4;
+    }
+  }
+
+  .wp-block-navigation__responsive-container {
+    .wp-block-navigation-submenu {
+      .wp-block-navigation-item__content {
+        @apply pl-0;
+      }
+      .wp-block-navigation__submenu-container {
+        @apply pl-4;
+      }
     }
   }
 }

@@ -58,7 +58,7 @@ function toggleContent(hideLanguage, showLanguage) {
   const activeLanguage = showLanguage === "english" ? "EN" : "ES";
   document.querySelector(
     ".language-submenu > a"
-  ).innerHTML = `<img class="active-language" src="/wp-content/themes/bridges-to-science/dist/images/${activeLanguage}.png" /> ${activeLanguage}`;
+  ).innerHTML = `${activeLanguage}`;
 }
 
 const languageMenu = document.querySelectorAll(".language-submenu a");

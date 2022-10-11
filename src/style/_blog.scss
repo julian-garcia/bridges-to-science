@@ -1,0 +1,65 @@
+.blog {
+  ul {
+    @apply m-0 list-none;
+
+    li {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .wp-block-post-excerpt__excerpt {
+    @apply max-h-12 overflow-hidden leading-tight mt-2;
+  }
+}
+
+.wp-site-blocks .article {
+  max-width: 700px;
+  @apply text-lg mx-auto;
+
+  hr {
+    @apply border-t-primary border-t-4 border-b-0;
+  }
+
+  .wp-block-post-featured-image {
+    max-width: 250px;
+    @apply float-left;
+
+    img {
+      @apply pr-4 pb-0;
+    }
+  }
+
+  .wp-block-post-date {
+    @apply mb-4;
+  }
+
+  .wp-block-post-title {
+    @apply font-bold text-primary-dark;
+  }
+
+  .social-share {
+    a {
+      @apply block bg-no-repeat bg-contain w-6 h-6;
+    }
+
+    .facebook {
+      background-image: url(../images/facebook.svg);
+    }
+
+    .twitter {
+      background-image: url(../images/twitter.svg);
+    }
+
+    .linkedin {
+      background-image: url(../images/linkedin.svg);
+    }
+
+    .whatsapp {
+      background-image: url(../images/whatsapp.svg);
+    }
+
+    .email {
+      background-image: url(../images/email.svg);
+    }
+  }
+}
