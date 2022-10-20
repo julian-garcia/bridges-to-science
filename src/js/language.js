@@ -47,6 +47,19 @@ languageToggles.forEach((toggle) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  let showLanguage = new URLSearchParams(window.location.search).get("lang");
+  if (showLanguage) {
+    showLanguage = showLanguage === "es" ? "spanish" : "english";
+    const hideLanguage = showLanguage === "spanish" ? "english" : "spanish";
+    sessionStorage.setItem(
+      "b2s-lang",
+      JSON.stringify({ showLanguage, hideLanguage })
+    );
+    toggleContent(hideLanguage, showLanguage);
+  }
+});
+
 function toggleContent(hideLanguage, showLanguage) {
   languageElements[showLanguage].forEach((element, index) => {
     element.style.display = originalDisplayValues[index];

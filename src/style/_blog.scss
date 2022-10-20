@@ -17,7 +17,7 @@
   @apply text-lg mx-auto;
 
   hr {
-    @apply border-t-primary border-t-4 border-b-0;
+    @apply border-t-primary border-t-4 border-b-0 mt-4 mb-8;
   }
 
   .wp-block-post-featured-image {
@@ -34,10 +34,16 @@
   }
 
   .wp-block-post-title {
-    @apply font-bold text-primary-dark;
+    @apply font-bold text-primary-dark mb-6;
+  }
+
+  .wp-block-post-excerpt__excerpt {
+    @apply leading-tight;
   }
 
   .social-share {
+    @apply my-4;
+
     a {
       @apply block bg-no-repeat bg-contain w-6 h-6;
     }
