@@ -6,6 +6,10 @@
   "source": [
     "src/images/EN.png",
     "src/images/ES.png",
+    "src/images/facebook.svg",
+    "src/images/linkedin.svg",
+    "src/images/twitter.svg",
+    "src/images/instagram.svg",
     "src/style/style-editor.scss",
     "src/style/main.scss",
     "src/js/main.js"
