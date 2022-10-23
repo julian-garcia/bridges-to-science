@@ -25,7 +25,17 @@ html {
 .wp-site-blocks {
   .wp-block-site-title {
     letter-spacing: 1px;
-    @apply text-primary font-bold text-xl uppercase;
+    max-width: 160px;
+
+    @apply text-primary font-bold text-lg uppercase;
+
+    @screen sm {
+      @apply text-xl;
+    }
+
+    @screen 2xs {
+      @apply max-w-full;
+    }
   }
 
   .page-title {

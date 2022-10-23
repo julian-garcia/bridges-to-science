@@ -12,4 +12,12 @@ footer {
   .copyright {
     @apply font-light;
   }
+
+  .wp-site-blocks & ul.wp-block-navigation__container {
+    @apply m-0 gap-4;
+
+    .wp-block-navigation-item {
+      @apply pl-0;
+    }
+  }
 }
