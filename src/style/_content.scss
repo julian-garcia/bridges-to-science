@@ -178,7 +178,7 @@ html {
     figure {
       margin-top: -150px;
       max-width: 300px;
-      @apply mb-4 mx-auto rounded-full;
+      @apply mb-4 mx-auto rounded-full overflow-hidden;
     }
   }
 
