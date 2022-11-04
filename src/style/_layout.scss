@@ -14,10 +14,17 @@
     @apply block 2xs:inline-flex;
   }
 
+  .wp-block-buttons {
+    @apply gap-4;
+  }
+
   .wp-block-columns {
+    @apply gap-4;
+
     &.small-gap {
       @apply gap-2.5;
     }
+
     &.full-width {
       margin-left: -50vw;
       margin-right: -50vw;
